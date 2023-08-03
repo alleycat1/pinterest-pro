@@ -1,0 +1,55 @@
+import { horizontalScale, verticalScale } from '../helpers/Layout'
+import { Dimensions as appDimensions } from 'react-native'
+const { width, height } = appDimensions.get('window')
+
+const Dimensions = {
+  height: {
+    size1: verticalScale(1),
+    size104: verticalScale(104),
+    size12: verticalScale(12),
+    size136: verticalScale(136),
+    size16: verticalScale(16),
+    size160: verticalScale(160),
+    size19: verticalScale(19),
+    size2: verticalScale(2),
+    size20: verticalScale(20),
+    size200: verticalScale(200),
+    size24: verticalScale(24),
+    size264: verticalScale(264),
+    size28: verticalScale(28),
+    size32: verticalScale(32),
+    size4: verticalScale(4),
+    size40: verticalScale(40),
+    size400: verticalScale(400),
+    size48: verticalScale(48),
+    size56: verticalScale(56),
+    size64: verticalScale(64),
+    size72: verticalScale(72),
+    size8: verticalScale(8),
+    size80: verticalScale(80),
+  },
+  screenHeight: height,
+  screenWidth: width,
+  width: {
+    size1: horizontalScale(1),
+    size12: horizontalScale(12),
+    size144: horizontalScale(144),
+    size16: horizontalScale(16),
+    size160: horizontalScale(160),
+    size20: horizontalScale(20),
+    size200: horizontalScale(200),
+    size224: horizontalScale(224),
+    size24: horizontalScale(24),
+    size28: horizontalScale(28),
+    size32: horizontalScale(32),
+    size320: horizontalScale(320),
+    size4: horizontalScale(4),
+    size40: horizontalScale(40),
+    size48: horizontalScale(48),
+    size56: horizontalScale(56),
+    size64: horizontalScale(64),
+    size8: horizontalScale(8),
+  },
+} as const
+
+export default Dimensions
